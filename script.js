@@ -30,6 +30,12 @@ function swiperAnimation(){
         spaceBetween: 100,
     });
 }
-
+function loadAnimation(){
+    var loader = document.querySelector('.loader')
+setTimeout(function(){
+    loader.style.top = "-100% ";
+}, 4000)
+}
 page4Animation();
 swiperAnimation();
+loadAnimation();
